@@ -23,3 +23,17 @@ function log(...rest) {
 //   }
 //   return res
 // }
+
+function bubbleSort(array) {
+  var t = 0
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array.length; j++) {
+      if (array[i] < array[j]) {
+        [array[i], array[j]] = [array[j], array[i]]
+      }
+    }
+  }
+  return array
+}
+
+log(bubbleSort([5, 3, 1, 6, 10, 99, 1, 4]))
