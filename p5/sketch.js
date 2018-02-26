@@ -43,7 +43,7 @@ function keyPressed() {
     }
   }
 }
-function touchStarted() {
+function mousePressed() {
   if (over) {
     pipes.length = 0
     speed = 1
@@ -51,4 +51,5 @@ function touchStarted() {
   } else {
     bird.jump()
   }
+  return false
 }
