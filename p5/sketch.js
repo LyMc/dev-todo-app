@@ -3,7 +3,7 @@ var h = window.innerHeight - 4
 var bird
 var pipes = []
 var i = 0
-var pipeInterval = 100
+var pipeInterval = Math.floor(w / 7)
 var speed = 1
 var over = false
 
