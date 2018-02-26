@@ -43,3 +43,12 @@ function keyPressed() {
     }
   }
 }
+function touchStarted() {
+  if (over) {
+    pipes.length = 0
+    speed = 1
+    bird.start()
+  } else {
+    bird.jump()
+  }
+}
