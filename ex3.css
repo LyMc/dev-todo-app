@@ -1,0 +1,18 @@
+p {
+  color: red;
+  cursor: pointer;
+}
+p.clicked {
+  color: blue;
+}
+
+.wrapper {
+  display: flex;
+  padding-bottom: 50px;
+}
+.square {
+  margin: 10px;
+  background: grey;
+  height: 100px;
+  width: 100px;
+}
