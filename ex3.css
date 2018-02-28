@@ -16,3 +16,10 @@ p.clicked {
   height: 100px;
   width: 100px;
 }
+
+.todo-item {
+  cursor: pointer;
+}
+.todo-item.checked {
+  text-decoration: line-through;
+}
