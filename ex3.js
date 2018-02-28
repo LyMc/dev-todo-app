@@ -56,3 +56,19 @@ $(document).ready(function(){
 
   renderList()
 })
+
+document.querySelector('.calc').addEventListener('click', function(event) {
+  if (event.target.classList.contains('do-calc')) {
+    var num1 = +document.querySelector('#num1').value
+    var num2 = +document.querySelector('#num2').value
+    var calc = `${num1} ${event.target.innerText} ${num2}`
+    document.querySelector('#result').innerHTML =
+     `${calc} = ${eval(calc)}`
+  }
+})
+
+function clearCalc() {
+  document.querySelector('#num1').value = ''
+  document.querySelector('#num2').value = ''
+  document.querySelector('#result').innerHTML = ''
+}

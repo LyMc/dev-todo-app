@@ -23,3 +23,7 @@ p.clicked {
 .todo-item.checked {
   text-decoration: line-through;
 }
+
+.calc input {
+  width: 50px;
+}
