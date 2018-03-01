@@ -90,12 +90,6 @@ class App extends React.Component {
             />
           )) }
 	      </List>
-        <hr/>
-        <ul>
-          <li>Node JS</li>
-          <li>npm i --global create-react-app</li>
-          <li>create-react-app appName</li>
-        </ul>
       </div>
     )
   }
