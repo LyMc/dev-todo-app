@@ -1,0 +1,9 @@
+<div>
+  <input type="text" ng-model="inputValue" ng-keypress="onEnter">
+  <button class="btn btn-primary" ng-click="addTodo()">Add</button>
+</div>
+<div>
+  <ul ng-repeat="item in todoList track by $index">
+    <li ng-dblclick="deleteItem($index)">{{ item }}</li>
+  </ul>
+</div>
