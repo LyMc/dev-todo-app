@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      name: 'world',
+      name: 'world safla nlk',
       nn: 'ceva diferit'
     }
   }
