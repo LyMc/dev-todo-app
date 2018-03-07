@@ -10,7 +10,17 @@ class App extends React.Component {
     }
   }
   changeName() {
-    this.setState({ name: 'underworld' })
+    fetch('http://localhost:3001/user', {
+	    method: 'POST',
+	    body: JSON.stringify({
+        name: 'Dima'
+      }),
+	    headers: {
+		    'content-type': 'application/json',
+	    }
+    })
+      .then( resp => resp.json() )
+      .then( user => this.setState({ name: user.name }) )
   }
   handleChangeName(event) {
     this.setState({ name: event.target.value })
